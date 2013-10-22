@@ -1,0 +1,75 @@
+<plugin name='cxf' version='1.1.1' grailsVersion='1.3.7 &gt; *'>
+  <author>Grails Plugin Consortium</author>
+  <title>CXF plug-in for Grails</title>
+  <description>Brings easy exposure of service and endpoint classes as Apache CXF SOAP Services to Grails.</description>
+  <documentation>https://github.com/Grails-Plugin-Consortium/grails-cxf</documentation>
+  <type>CxfGrailsPlugin</type>
+  <resources>
+    <resource>BootStrap</resource>
+    <resource>DefaultCxfConfig</resource>
+    <resource>codenarc</resource>
+    <resource>spring.resources</resource>
+    <resource>org.grails.cxf.test.Chapter</resource>
+    <resource>org.grails.cxf.test.Page</resource>
+    <resource>org.grails.cxf.test.RemoteReport</resource>
+    <resource>org.grails.cxf.test.Word</resource>
+    <resource>org.grails.cxf.test.AnnotatedCustomerServiceWsdlEndpoint</resource>
+    <resource>org.grails.cxf.test.AnnotatedDefaultEndpoint</resource>
+    <resource>org.grails.cxf.test.AnnotatedSimpleAddressEndpoint</resource>
+    <resource>org.grails.cxf.test.AnnotatedSimpleEndpoint</resource>
+    <resource>org.grails.cxf.test.BookStoreEndpoint</resource>
+    <resource>org.grails.cxf.test.BookStoreService</resource>
+    <resource>org.grails.cxf.test.CoffeeMakerEndpoint</resource>
+    <resource>org.grails.cxf.test.CustomerServiceEndpoint</resource>
+    <resource>org.grails.cxf.test.CustomerServiceWsdlEndpoint</resource>
+    <resource>org.grails.cxf.test.CxfAnnotationInterceptorEndpoint</resource>
+    <resource>org.grails.cxf.test.SimpleOneTwoEndpoint</resource>
+    <resource>org.grails.cxf.test.AnnotatedExcludesCarService</resource>
+    <resource>org.grails.cxf.test.AnnotatedExcludesMixedCarService</resource>
+    <resource>org.grails.cxf.test.AnnotatedInterceptorService</resource>
+    <resource>org.grails.cxf.test.AnnotatedLongAddressService</resource>
+    <resource>org.grails.cxf.test.AnnotatedSecureService</resource>
+    <resource>org.grails.cxf.test.BoatService</resource>
+    <resource>org.grails.cxf.test.CarService</resource>
+    <resource>org.grails.cxf.test.CxfJaxAddressNewNameService</resource>
+    <resource>org.grails.cxf.test.CxfJaxAddressService</resource>
+    <resource>org.grails.cxf.test.LegacyCxfJaxService</resource>
+    <resource>org.grails.cxf.test.LegacyCxfService</resource>
+    <resource>org.grails.cxf.test.PageService</resource>
+    <resource>org.grails.cxf.test.PageSimpleService</resource>
+    <resource>org.grails.cxf.test.PlaneService</resource>
+    <resource>org.grails.cxf.test.RemoteReportService</resource>
+    <resource>org.grails.cxf.test.SimpleExceptionService</resource>
+    <resource>org.grails.cxf.test.SoapOneTwoSimpleService</resource>
+    <resource>org.grails.cxf.test.TruckService</resource>
+  </resources>
+  <repositories>
+    <repository name='grailsCentral' url='http://grails.org/plugins' />
+    <repository name='http://repo.grails.org/grails/core' url='http://repo.grails.org/grails/core/' />
+    <repository name='mavenCentral' url='http://repo1.maven.org/maven2/' />
+  </repositories>
+  <dependencies>
+    <test>
+      <dependency group='org.seleniumhq.selenium' name='selenium-chrome-driver' version='2.25.0' />
+      <dependency group='org.apache.ws.security' name='wss4j' version='1.6.7' />
+      <dependency group='org.codehaus.geb' name='geb-spock' version='0.7.2' />
+      <dependency group='com.github.groovy-wslite' name='groovy-wslite' version='0.7.0' />
+      <dependency group='org.apache.cxf' name='cxf-rt-ws-security' version='2.6.2' />
+      <dependency group='org.seleniumhq.selenium' name='selenium-htmlunit-driver' version='2.25.0' />
+      <dependency group='org.seleniumhq.selenium' name='selenium-firefox-driver' version='2.25.0' />
+    </test>
+    <compile>
+      <dependency group='com.sun.xml.bind' name='jaxb-xjc' version='2.2.6' />
+      <dependency group='org.apache.cxf' name='cxf-tools-wsdlto-databinding-jaxb' version='2.6.2' />
+      <dependency group='org.apache.cxf' name='cxf-tools-wsdlto-core' version='2.6.2' />
+      <dependency group='org.apache.cxf' name='cxf-rt-frontend-jaxws' version='2.6.2' />
+      <dependency group='commons-cli' name='commons-cli' version='1.2' />
+      <dependency group='org.apache.cxf' name='cxf-tools-wsdlto-frontend-jaxws' version='2.6.2' />
+      <dependency group='com.sun.xml.bind' name='jaxb-impl' version='2.2.6' />
+      <dependency group='org.apache.cxf' name='cxf-rt-frontend-jaxrs' version='2.6.2' />
+    </compile>
+  </dependencies>
+  <plugins />
+  <runtimePluginRequirements />
+  <behavior />
+</plugin>
