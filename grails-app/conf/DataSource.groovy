@@ -1,8 +1,10 @@
 dataSource {
     pooled = true
-    driverClassName = "org.h2.Driver"
-    username = "sa"
-    password = ""
+    username = "sicahi"
+    password = "sicahi"
+    driverClassName = "org.postgresql.Driver"
+    url = "jdbc:postgresql://localhost:5432/sicahi"
+    dialect="org.hibernate.dialect.PostgreSQLDialect"
 }
 hibernate {
     cache.use_second_level_cache = true
@@ -16,19 +18,19 @@ environments {
     development {
         dataSource {
             dbCreate = "create-drop" // one of 'create', 'create-drop', 'update', 'validate', ''
-            url = "jdbc:h2:mem:devDb;MVCC=TRUE;LOCK_TIMEOUT=10000"
+            url = "jdbc:postgresql://localhost:5432/sicahi"
         }
     }
     test {
         dataSource {
             dbCreate = "update"
-            url = "jdbc:h2:mem:testDb;MVCC=TRUE;LOCK_TIMEOUT=10000"
+            url = "jdbc:postgresql://localhost:5432/sicahi"
         }
     }
     production {
         dataSource {
             dbCreate = "update"
-            url = "jdbc:h2:prodDb;MVCC=TRUE;LOCK_TIMEOUT=10000"
+            url = "jdbc:postgresql://localhost:5432/sicahi"
             properties {
                maxActive = -1
                minEvictableIdleTimeMillis=1800000

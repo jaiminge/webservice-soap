@@ -8,21 +8,11 @@ import javax.jws.WebResult
 @Transactional
 class WsoapService {
 
-   static expose=['cxfjax']
-   
-    
-  /*@WebResult(name="Result")
-  @WebMethod(operationName="getRetorno")
-  int getRetorno(@WebParam(name="id")Long id) {
-    return Wsoap.get(id).retorno
-  }*/
-    
-  @WebResult(name="Result")
-  @WebMethod(operationName="getWsoap")
-  int getWsoap(@WebParam(name="id")Long id) {
-    return Wsoap.get(id).Wsoap
-  }
-    
-  
-    
+    static expose=['cxfjax']
+
+    @WebResult(name="Result")
+    @WebMethod(operationName="getWsoap")
+    Wsoap getWsoap(@WebParam(name="numcrd")String numcrd) {
+        return Wsoap.findByNumcrd(numcrd)
+    }  
 }
